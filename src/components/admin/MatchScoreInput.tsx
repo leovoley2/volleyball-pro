@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { MatchWithTeams } from '../../types/database';
 import { useUpdateMatchScore } from '../../hooks/useMatches';
 import { validateSetScore } from '../../utils/standings';
-import { Save, X, CheckCircle, AlertCircle } from 'lucide-react';
+import { X, CheckCircle, AlertCircle } from 'lucide-react';
 
 interface MatchScoreInputProps {
   match: MatchWithTeams;
@@ -164,9 +164,8 @@ export const MatchScoreInput: React.FC<MatchScoreInputProps> = ({ match, onClose
               max="99"
               value={scores.set1_a}
               onChange={(e) => handleScoreChange('set1', 'a', e.target.value)}
-              className={`px-4 py-3 border-2 rounded-lg text-center text-2xl font-bold focus:ring-2 focus:ring-blue-500 ${
-                errors.set1 ? 'border-red-500' : 'border-gray-300'
-              }`}
+              className={`px-4 py-3 border-2 rounded-lg text-center text-2xl font-bold focus:ring-2 focus:ring-blue-500 ${errors.set1 ? 'border-red-500' : 'border-gray-300'
+                }`}
               placeholder="0"
             />
             <div className="text-center text-gray-400 font-bold">-</div>
@@ -176,9 +175,8 @@ export const MatchScoreInput: React.FC<MatchScoreInputProps> = ({ match, onClose
               max="99"
               value={scores.set1_b}
               onChange={(e) => handleScoreChange('set1', 'b', e.target.value)}
-              className={`px-4 py-3 border-2 rounded-lg text-center text-2xl font-bold focus:ring-2 focus:ring-blue-500 ${
-                errors.set1 ? 'border-red-500' : 'border-gray-300'
-              }`}
+              className={`px-4 py-3 border-2 rounded-lg text-center text-2xl font-bold focus:ring-2 focus:ring-blue-500 ${errors.set1 ? 'border-red-500' : 'border-gray-300'
+                }`}
               placeholder="0"
             />
           </div>
@@ -202,9 +200,8 @@ export const MatchScoreInput: React.FC<MatchScoreInputProps> = ({ match, onClose
               max="99"
               value={scores.set2_a}
               onChange={(e) => handleScoreChange('set2', 'a', e.target.value)}
-              className={`px-4 py-3 border-2 rounded-lg text-center text-2xl font-bold focus:ring-2 focus:ring-blue-500 ${
-                errors.set2 ? 'border-red-500' : 'border-gray-300'
-              }`}
+              className={`px-4 py-3 border-2 rounded-lg text-center text-2xl font-bold focus:ring-2 focus:ring-blue-500 ${errors.set2 ? 'border-red-500' : 'border-gray-300'
+                }`}
               placeholder="0"
             />
             <div className="text-center text-gray-400 font-bold">-</div>
@@ -214,9 +211,8 @@ export const MatchScoreInput: React.FC<MatchScoreInputProps> = ({ match, onClose
               max="99"
               value={scores.set2_b}
               onChange={(e) => handleScoreChange('set2', 'b', e.target.value)}
-              className={`px-4 py-3 border-2 rounded-lg text-center text-2xl font-bold focus:ring-2 focus:ring-blue-500 ${
-                errors.set2 ? 'border-red-500' : 'border-gray-300'
-              }`}
+              className={`px-4 py-3 border-2 rounded-lg text-center text-2xl font-bold focus:ring-2 focus:ring-blue-500 ${errors.set2 ? 'border-red-500' : 'border-gray-300'
+                }`}
               placeholder="0"
             />
           </div>
@@ -241,9 +237,8 @@ export const MatchScoreInput: React.FC<MatchScoreInputProps> = ({ match, onClose
               max="99"
               value={scores.set3_a}
               onChange={(e) => handleScoreChange('set3', 'a', e.target.value)}
-              className={`px-4 py-3 border-2 rounded-lg text-center text-2xl font-bold focus:ring-2 focus:ring-blue-500 ${
-                errors.set3 ? 'border-red-500' : 'border-gray-300'
-              }`}
+              className={`px-4 py-3 border-2 rounded-lg text-center text-2xl font-bold focus:ring-2 focus:ring-blue-500 ${errors.set3 ? 'border-red-500' : 'border-gray-300'
+                }`}
               placeholder="0"
             />
             <div className="text-center text-gray-400 font-bold">-</div>
@@ -253,9 +248,8 @@ export const MatchScoreInput: React.FC<MatchScoreInputProps> = ({ match, onClose
               max="99"
               value={scores.set3_b}
               onChange={(e) => handleScoreChange('set3', 'b', e.target.value)}
-              className={`px-4 py-3 border-2 rounded-lg text-center text-2xl font-bold focus:ring-2 focus:ring-blue-500 ${
-                errors.set3 ? 'border-red-500' : 'border-gray-300'
-              }`}
+              className={`px-4 py-3 border-2 rounded-lg text-center text-2xl font-bold focus:ring-2 focus:ring-blue-500 ${errors.set3 ? 'border-red-500' : 'border-gray-300'
+                }`}
               placeholder="0"
             />
           </div>

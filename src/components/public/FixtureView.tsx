@@ -33,8 +33,6 @@ const StatusBadge: React.FC<{ status: MatchStatus }> = ({ status }) => {
 };
 
 const MatchCard: React.FC<{ match: MatchWithTeams }> = ({ match }) => {
-    const teamAName = `${match.team_a.player1.apellido}/${match.team_a.player2.apellido}`;
-    const teamBName = `${match.team_b.player1.apellido}/${match.team_b.player2.apellido}`;
     const isFinished = match.status === 'finalizado';
     const aWon = match.winner_id === match.team_a_id;
     const bWon = match.winner_id === match.team_b_id;

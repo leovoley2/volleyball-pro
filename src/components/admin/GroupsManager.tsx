@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useTeams } from '../../hooks/useTeams';
 import { useGroups, useGroupTeams, useGenerateGroups } from '../../hooks/useGroups';
 import { useTournament } from '../../hooks/useTournaments';
-import { Layers, Shuffle, ChevronRight } from 'lucide-react';
+import { Layers, Shuffle } from 'lucide-react';
 
 interface GroupsManagerProps {
     tournamentId: string;
@@ -15,7 +15,7 @@ export const GroupsManager: React.FC<GroupsManagerProps> = ({ tournamentId }) =>
     const { data: groups } = useGroups(tournamentId);
     const generateGroups = useGenerateGroups();
     const [generating, setGenerating] = useState(false);
-    const [generated, setGenerated] = useState(false);
+    const [_generated, setGenerated] = useState(false);
 
     const hasGroups = (groups || []).length > 0;
 

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { usePlayers, useCreatePlayer, useUpdatePlayer, useDeletePlayer } from '../../hooks/usePlayers';
 import { Player, CreatePlayerInput, CATEGORIES, GENDERS } from '../../types/database';
-import { UserPlus, Edit2, Trash2, Search, X, Save, ChevronDown } from 'lucide-react';
+import { UserPlus, Edit2, Trash2, Search, X, Save } from 'lucide-react';
 
 const EMPTY_FORM: CreatePlayerInput = {
     nombre: '',

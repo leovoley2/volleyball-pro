@@ -1,7 +1,7 @@
 // src/hooks/useStandings.ts
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { supabase } from '../lib/supabase';
-import { Standing, StandingWithTeam, GroupStandings, TeamStanding } from '../types/database';
+import { StandingWithTeam, GroupStandings } from '../types/database';
 import { calculateGroupStandings } from '../utils/standings';
 import { useMatches } from './useMatches';
 import { useEffect } from 'react';

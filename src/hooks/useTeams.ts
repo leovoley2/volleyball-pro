@@ -1,7 +1,7 @@
 // src/hooks/useTeams.ts
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { supabase } from '../lib/supabase';
-import { Team, TeamWithPlayers, CreateTeamInput } from '../types/database';
+import { TeamWithPlayers, CreateTeamInput } from '../types/database';
 
 export function useTeams(tournamentId: string | undefined) {
     return useQuery({
